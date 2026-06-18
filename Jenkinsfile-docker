@@ -50,7 +50,7 @@ pipeline {
     stage('Run Container') {
       agent { label 'controller' }
       steps {
-        sh 'docker container run --detach --name myhllo -p 80:8080 yangdoll1207/myhello:latest'
+        sh 'docker container run --detach --name myhello -p 80:8080 yangdoll1207/myhello:latest'
       }
     }
   }
